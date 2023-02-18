@@ -4,7 +4,8 @@ Section: WE1
 Term: Spring '23
 Instructor: Nick Murphy
 Name: Nicholi Moore Caron
-Lab#: 
+Lab#: 6A
+#[derive(PartialEq)]
 */
 
 int main(int argc, char ** argv) {

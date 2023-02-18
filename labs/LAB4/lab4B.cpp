@@ -24,6 +24,10 @@ int main(int argc, char ** argv) {
 	// For the first case, I would add another else-if to specifically handle
 	// the other days. For the second case, I would include the 
 	// boost/algorithm/string/predicate.hpp header and use its iequals method
+	// 
+	// Also, since C++ switch statements can only be used for matching ints
+	// we use compound-conditional if statements
+
 	if (day == "Monday" || day == "monday" || day == "Wednesday" || day == "wednesday") 
 		{cout << "I have class today!\n";}
 	else if (day == "Friday" || day == "friday")

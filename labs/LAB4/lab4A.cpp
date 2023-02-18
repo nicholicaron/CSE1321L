@@ -20,7 +20,12 @@ int main(int argc, char ** argv) {
 	cin >> grade_num;
 
 
-	// floating point comparisons can get hairy, and require error handling
+	// Using a series of else-if statements here to check two conditions 
+	// simultaneously using the logical AND operator. Although this looks
+	// like an opportunity to use a switch statement, you cannot use 
+	// conditionals within the cases of switch statements 
+	//
+	// Floating point comparisons can get hairy, and require error handling
 	// and epsilons but this code assumes some semblance of input sanitizing
 	if (97.5 <= grade_num && grade_num <= 100) {cout << "A+\n";}
 	else if (94.5 <= grade_num && grade_num < 97.5) {cout << "A\n";}
@@ -39,3 +44,4 @@ int main(int argc, char ** argv) {
 
 	return 0;
 }
+
