@@ -16,8 +16,8 @@ int main(int argc, char ** argv) {
 	cin >> dim;
 
 	cout << "This is the requested " << dim << 'x' << dim << " right-triangle:\n";
-	for (int outer = 1; outer <= dim; outer++) {
-		for (int inner = 0; inner < outer; inner++) {
+	for (int outer = 0; outer < dim; outer++) {
+		for (int inner = 0; inner <= outer; inner++) {
 			cout << '*';
 		}
 		cout << '\n';
