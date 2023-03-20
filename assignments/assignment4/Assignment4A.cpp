@@ -13,7 +13,7 @@ using namespace std;
 int main(int argc, char ** argv) {
 	cout << "What loop do you want to use?\n";
 	cout << "1) A loop that might run zero or more times\n";
-	cout << "2) A loop that will always run at lease once\n";
+	cout << "2) A loop that will always run at least once\n";
 	cout << "3) A loop with a predetermined start and end\n";
 
 	int selection, start, end = 0;
@@ -23,7 +23,7 @@ int main(int argc, char ** argv) {
 		case 1: 
 			cout << "What's your start number? ";
 			cin >> start;
-			while (start >= 0) {
+			while (start >= end) {
 				cout << start << ", ";
 				start--;
 			}
@@ -35,7 +35,7 @@ int main(int argc, char ** argv) {
 				cout << start << ", ";
 				start--;
 			} 
-			while (start >= 0);
+			while (start >= end);
 			break;
 		case 3: 
 			cout << "What's your start number? ";
